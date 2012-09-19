@@ -32,7 +32,7 @@ function addJQuery(callback) {
 function main() {
    
 	$().ready(function() {
-		$("input.button").before('假期最后的周日:<INPUT id="lastSunday" type="date" value="2012-9-9"/>');
+		$("input.button").before('假期最后的周日:<INPUT id="lastSunday" type="text" value="2012-9-9"/>');
 		$("input.button").before('<INPUT id="outputCal" type="button" value="生成vCal(请稍等)">');
 		var $vCalArea = $('<textarea readonly style="width:60%;height:300px"></textarea>');
 		var $vCalDiv=$("<div position:absolute;top:0px></div>")

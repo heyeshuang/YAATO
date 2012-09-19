@@ -1,0 +1,977 @@
+<html><head>
+<title>本科生选课系统</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<link type="text/css" href="syxk.vsyxkKcapb.do_files/menu.css" rel="stylesheet">
+<link type="text/css" href="syxk.vsyxkKcapb.do_files/datepicker.css" rel="StyleSheet">
+<link type="text/css" href="syxk.vsyxkKcapb.do_files/grid.css" rel="stylesheet">
+<link type="text/css" href="syxk.vsyxkKcapb.do_files/css.css" rel="stylesheet">
+<link type="text/css" href="syxk.vsyxkKcapb.do_files/default.css" rel="stylesheet">
+<link type="text/css" href="syxk.vsyxkKcapb.do_files/common.css" rel="stylesheet">
+<link type="text/css" href="syxk.vsyxkKcapb.do_files/topmenu.css" rel="stylesheet">
+
+<script type="text/javascript" src="syxk.vsyxkKcapb.do_files/grid.js"></script>
+<script type="text/javascript" src="syxk.vsyxkKcapb.do_files/prototype.js"></script>
+<script type="text/javascript" src="syxk.vsyxkKcapb.do_files/page.js"></script>
+<script type="text/javascript" src="syxk.vsyxkKcapb.do_files/selectlist.js"></script>
+<script type="text/javascript" src="syxk.vsyxkKcapb.do_files/validation.js"></script>
+<script type="text/javascript" src="syxk.vsyxkKcapb.do_files/datepicker.js"></script>
+<script type="text/javascript" src="syxk.vsyxkKcapb.do_files/menu.js"></script>
+<script type="text/javascript" src="syxk.vsyxkKcapb.do_files/validator.jsp"></script>
+<script type="text/javascript" src="syxk.vsyxkKcapb.do_files/pubFunction.js"></script>
+
+
+
+</head>
+
+<body class="infoBody">
+
+
+
+
+<div id="isShow"><div class="dqwz" id="pathTd"></div></div>
+<div class="window_side" id="pathTd">
+  	<div class="window_title_yuan" id="window_title">
+    	<div id="SubComtent" class="window_title_left">整体课表</div>
+    	<div class="window_titleleft_yuan">&nbsp;</div>
+  	</div>
+	<div class="window_neirong" id="">
+<script>
+function initTopLocal(){
+   //initTop("image","images/zhjw/text.png","本科生选课系统");
+   //initTop("text","","本科生选课系统");
+   //initTopPart("text","本科生选课系统");
+
+
+ 
+   initTopPart("image","images/zhjw/xt/sykxk.gif");
+   //是否显示路径
+   isShowPath(true);
+   if('整体课表'=='')
+   {
+      //showPath("&nbsp;&nbsp;<span class='copyright_zi_hui_b_shadow'>您当前的位置：</span>&nbsp;二级选课&gt&gt二级课选课");
+      initTopPart("text","二级选课"); 
+   }
+   else
+   {
+     //showPath("&nbsp;&nbsp;<span class='copyright_zi_hui_b_shadow'>您当前的位置：</span>&nbsp;二级选课&gt&gt整体课表");
+     initTopPart("text","整体课表"); 
+   }
+
+}
+</script>
+<script type="text/javascript" src="syxk.vsyxkKcapb.do_files/xk.js"></script>
+<script>
+
+window.document.title = "本科生选课系统";;
+document.getElementById("SubComtent").innerHTML="整体课表";
+
+function doExport(methodName){//数据导出
+  document.frm.m.value = methodName;
+  document.frm.target = "_new";
+  document.frm.submit();
+  document.frm.target = "_self";
+}
+
+	function setInitValue() {
+		var strHTML="";
+		
+			strHTML = "";
+			var strHTML1 = "";
+			
+				strHTML += "<a class='mainHref' href='js.vjsKcbBs.do?m=showToXs&p_id=L06117;00610832' target='_blank'>";
+			
+			strHTML += "<b>围棋与中国文化</b>";
+			
+				strHTML += "</a>";
+			
+			
+				strHTML1 += "；方天丰";
+			
+			
+				strHTML1 += "；任选";
+			
+			
+				strHTML1 += "；全周";
+			
+			
+				
+					strHTML1 +="；六教6C101"
+				
+			
+			
+			if(strHTML1 != "") {
+				strHTML1 = "(" + strHTML1.substr(1) + ")";
+			}
+			strHTML += strHTML1;
+			
+			getElementById('a6_4').innerHTML += strHTML+"<br>";
+			
+		
+			strHTML = "";
+			var strHTML1 = "";
+			
+				strHTML += "<a class='mainHref' href='js.vjsKcbBs.do?m=showToXs&p_id=1997990226;10420803' target='_blank'>";
+			
+			strHTML += "<b>概率论与数理统计</b>";
+			
+				strHTML += "</a>";
+			
+			
+				strHTML1 += "；王晓峰";
+			
+			
+				strHTML1 += "；限选";
+			
+			
+				strHTML1 += "；全周";
+			
+			
+				
+					strHTML1 +="；二教402"
+				
+			
+			
+			if(strHTML1 != "") {
+				strHTML1 = "(" + strHTML1.substr(1) + ")";
+			}
+			strHTML += strHTML1;
+			
+			getElementById('a2_5').innerHTML += strHTML+"<br>";
+			
+		
+			strHTML = "";
+			var strHTML1 = "";
+			
+				strHTML += "<a class='mainHref' href='js.vjsKcbBs.do?m=showToXs&p_id=1995990313;10430494' target='_blank'>";
+			
+			strHTML += "<b>大学物理B(2)</b>";
+			
+				strHTML += "</a>";
+			
+			
+				strHTML1 += "；戴松涛";
+			
+			
+				strHTML1 += "；任选";
+			
+			
+				strHTML1 += "；全周";
+			
+			
+				
+					strHTML1 +="；三教2101"
+				
+			
+			
+			if(strHTML1 != "") {
+				strHTML1 = "(" + strHTML1.substr(1) + ")";
+			}
+			strHTML += strHTML1;
+			
+			getElementById('a1_1').innerHTML += strHTML+"<br>";
+			
+		
+			strHTML = "";
+			var strHTML1 = "";
+			
+				strHTML += "<a class='mainHref' href='js.vjsKcbBs.do?m=showToXs&p_id=1995990313;10430494' target='_blank'>";
+			
+			strHTML += "<b>大学物理B(2)</b>";
+			
+				strHTML += "</a>";
+			
+			
+				strHTML1 += "；戴松涛";
+			
+			
+				strHTML1 += "；任选";
+			
+			
+				strHTML1 += "；全周";
+			
+			
+				
+					strHTML1 +="；三教2101"
+				
+			
+			
+			if(strHTML1 != "") {
+				strHTML1 = "(" + strHTML1.substr(1) + ")";
+			}
+			strHTML += strHTML1;
+			
+			getElementById('a2_4').innerHTML += strHTML+"<br>";
+			
+		
+			strHTML = "";
+			var strHTML1 = "";
+			
+				strHTML += "<a class='mainHref' href='js.vjsKcbBs.do?m=showToXs&p_id=1998990159;10721041' target='_blank'>";
+			
+			strHTML += "<b>三年级男生网球</b>";
+			
+				strHTML += "</a>";
+			
+			
+				strHTML1 += "；刘波";
+			
+			
+			
+				strHTML1 += "；全周";
+			
+			
+				
+					strHTML1 +="；紫荆网球场"
+				
+			
+			
+			if(strHTML1 != "") {
+				strHTML1 = "(" + strHTML1.substr(1) + ")";
+			}
+			strHTML += strHTML1;
+			
+			getElementById('a3_2').innerHTML += strHTML+"<br>";
+			
+		
+			strHTML = "";
+			var strHTML1 = "";
+			
+				strHTML += "<a class='mainHref' href='js.vjsKcbBs.do?m=showToXs&p_id=2010990072;20120103' target='_blank'>";
+			
+			strHTML += "<b>工程材料</b>";
+			
+				strHTML += "</a>";
+			
+			
+				strHTML1 += "；邵洋";
+			
+			
+				strHTML1 += "；必修";
+			
+			
+				strHTML1 += "；1,3,5,7,13周";
+			
+			
+				
+					strHTML1 +="；三教1208"
+				
+			
+			
+			if(strHTML1 != "") {
+				strHTML1 = "(" + strHTML1.substr(1) + ")";
+			}
+			strHTML += strHTML1;
+			
+			getElementById('a4_3').innerHTML += strHTML+"<br>";
+			
+		
+			strHTML = "";
+			var strHTML1 = "";
+			
+				strHTML += "<a class='mainHref' href='js.vjsKcbBs.do?m=showToXs&p_id=2010990072;20120103' target='_blank'>";
+			
+			strHTML += "<b>工程材料</b>";
+			
+				strHTML += "</a>";
+			
+			
+				strHTML1 += "；邵洋";
+			
+			
+				strHTML1 += "；必修";
+			
+			
+				strHTML1 += "；全周";
+			
+			
+				
+					strHTML1 +="；三教1208"
+				
+			
+			
+			if(strHTML1 != "") {
+				strHTML1 = "(" + strHTML1.substr(1) + ")";
+			}
+			strHTML += strHTML1;
+			
+			getElementById('a1_5').innerHTML += strHTML+"<br>";
+			
+		
+			strHTML = "";
+			var strHTML1 = "";
+			
+				strHTML += "<a class='mainHref' href='js.vjsKcbBs.do?m=showToXs&p_id=1986990055;20130463' target='_blank'>";
+			
+			strHTML += "<b>机械设计基础A(2)</b>";
+			
+				strHTML += "</a>";
+			
+			
+				strHTML1 += "；刘向锋";
+			
+			
+				strHTML1 += "；必修";
+			
+			
+				strHTML1 += "；全周";
+			
+			
+				
+					strHTML1 +="；六教6A201"
+				
+			
+			
+			if(strHTML1 != "") {
+				strHTML1 = "(" + strHTML1.substr(1) + ")";
+			}
+			strHTML += strHTML1;
+			
+			getElementById('a3_5').innerHTML += strHTML+"<br>";
+			
+		
+			strHTML = "";
+			var strHTML1 = "";
+			
+				strHTML += "<a class='mainHref' href='js.vjsKcbBs.do?m=showToXs&p_id=1986990055;20130463' target='_blank'>";
+			
+			strHTML += "<b>机械设计基础A(2)</b>";
+			
+				strHTML += "</a>";
+			
+			
+				strHTML1 += "；刘向锋";
+			
+			
+				strHTML1 += "；必修";
+			
+			
+				strHTML1 += "；全周";
+			
+			
+				
+					strHTML1 +="；六教6A201"
+				
+			
+			
+			if(strHTML1 != "") {
+				strHTML1 = "(" + strHTML1.substr(1) + ")";
+			}
+			strHTML += strHTML1;
+			
+			getElementById('a4_5').innerHTML += strHTML+"<br>";
+			
+		
+			strHTML = "";
+			var strHTML1 = "";
+			
+				strHTML += "<a class='mainHref' href='js.vjsKcbBs.do?m=showToXs&p_id=1993990072;20140083' target='_blank'>";
+			
+			strHTML += "<b>传热学</b>";
+			
+				strHTML += "</a>";
+			
+			
+				strHTML1 += "；姜培学";
+			
+			
+				strHTML1 += "；必修";
+			
+			
+				strHTML1 += "；全周";
+			
+			
+				
+					strHTML1 +="；五教5104"
+				
+			
+			
+			if(strHTML1 != "") {
+				strHTML1 = "(" + strHTML1.substr(1) + ")";
+			}
+			strHTML += strHTML1;
+			
+			getElementById('a2_3').innerHTML += strHTML+"<br>";
+			
+		
+			strHTML = "";
+			var strHTML1 = "";
+			
+				strHTML += "<a class='mainHref' href='js.vjsKcbBs.do?m=showToXs&p_id=2005990067;20220233' target='_blank'>";
+			
+			strHTML += "<b>计算机硬件技术基础</b>";
+			
+				strHTML += "</a>";
+			
+			
+				strHTML1 += "；邹晓兵";
+			
+			
+				strHTML1 += "；限选";
+			
+			
+				strHTML1 += "；单周";
+			
+			
+				
+					strHTML1 +="；四教4105"
+				
+			
+			
+			if(strHTML1 != "") {
+				strHTML1 = "(" + strHTML1.substr(1) + ")";
+			}
+			strHTML += strHTML1;
+			
+			getElementById('a4_1').innerHTML += strHTML+"<br>";
+			
+		
+			strHTML = "";
+			var strHTML1 = "";
+			
+				strHTML += "<a class='mainHref' href='js.vjsKcbBs.do?m=showToXs&p_id=2005990067;20220233' target='_blank'>";
+			
+			strHTML += "<b>计算机硬件技术基础</b>";
+			
+				strHTML += "</a>";
+			
+			
+				strHTML1 += "；邹晓兵";
+			
+			
+				strHTML1 += "；限选";
+			
+			
+				strHTML1 += "；全周";
+			
+			
+				
+					strHTML1 +="；四教4105"
+				
+			
+			
+			if(strHTML1 != "") {
+				strHTML1 = "(" + strHTML1.substr(1) + ")";
+			}
+			strHTML += strHTML1;
+			
+			getElementById('a1_4').innerHTML += strHTML+"<br>";
+			
+		
+			strHTML = "";
+			var strHTML1 = "";
+			
+				strHTML += "<a class='mainHref' href='js.vjsKcbBs.do?m=showToXs&p_id=1999990144;20310274' target='_blank'>";
+			
+			strHTML += "<b>流体力学</b>";
+			
+				strHTML += "</a>";
+			
+			
+				strHTML1 += "；张锡文";
+			
+			
+				strHTML1 += "；必修";
+			
+			
+				strHTML1 += "；全周";
+			
+			
+				
+					strHTML1 +="；六教6A309"
+				
+			
+			
+			if(strHTML1 != "") {
+				strHTML1 = "(" + strHTML1.substr(1) + ")";
+			}
+			strHTML += strHTML1;
+			
+			getElementById('a2_1').innerHTML += strHTML+"<br>";
+			
+		
+			strHTML = "";
+			var strHTML1 = "";
+			
+				strHTML += "<a class='mainHref' href='js.vjsKcbBs.do?m=showToXs&p_id=1999990144;20310274' target='_blank'>";
+			
+			strHTML += "<b>流体力学</b>";
+			
+				strHTML += "</a>";
+			
+			
+				strHTML1 += "；张锡文";
+			
+			
+				strHTML1 += "；必修";
+			
+			
+				strHTML1 += "；全周";
+			
+			
+				
+					strHTML1 +="；六教6A309"
+				
+			
+			
+			if(strHTML1 != "") {
+				strHTML1 = "(" + strHTML1.substr(1) + ")";
+			}
+			strHTML += strHTML1;
+			
+			getElementById('a1_3').innerHTML += strHTML+"<br>";
+			
+		
+		
+			strHTML = "<a class='blue_red_none' href='kc.kcEjkcb.do?m=show&p_id=1042080300' target='_blank'><b>概率论与数理统计习题课</b></a><font color='blue'>概率统计王晓峰26(第5,7,9,12,15周)</font>";
+			getElementById('a6_2').innerHTML += strHTML+"<br>";
+		
+			strHTML = "<a class='blue_red_none' href='kc.kcEjkcb.do?m=show&p_id=2012010300' target='_blank'><b>工程材料</b></a><font color='blue'>A1(西主楼2区406；第6,8,14周)</font>";
+			getElementById('a3_1').innerHTML += strHTML+"<br>";
+		
+			strHTML = "<a class='blue_red_none' href='kc.kcEjkcb.do?m=show&p_id=2013046300' target='_blank'><b>机械设计基础A(2)</b></a><font color='blue'>齿轮范成实验Ⅰ-10(精仪系馆3308；第8周；时间14:20-15:05)</font>";
+			getElementById('a3_3').innerHTML += strHTML+"<br>";
+		
+			strHTML = "<a class='blue_red_none' href='kc.kcEjkcb.do?m=show&p_id=2013046300' target='_blank'><b>机械设计基础A(2)</b></a><font color='blue'>齿轮范成实验Ⅱ-11(精仪系馆3308室；第10周)</font>";
+			getElementById('a3_3').innerHTML += strHTML+"<br>";
+		
+			strHTML = "<a class='blue_red_none' href='kc.kcEjkcb.do?m=show&p_id=2013046300' target='_blank'><b>机械设计基础A(2)</b></a><font color='blue'>齿轮范成实验Ⅱ-11(精仪系馆3308室；第10周)</font>";
+			getElementById('a4_3').innerHTML += strHTML+"<br>";
+		
+			strHTML = "<a class='blue_red_none' href='kc.kcEjkcb.do?m=show&p_id=2013046300' target='_blank'><b>机械设计基础A(2)</b></a><font color='blue'>典型机构实例展示20(精仪系馆3308；第3周；时间14:20-15:05)</font>";
+			getElementById('a3_4').innerHTML += strHTML+"<br>";
+		
+			strHTML = "<a class='blue_red_none' href='kc.kcEjkcb.do?m=show&p_id=2013046300' target='_blank'><b>机械设计基础A(2)</b></a><font color='blue'>简图测绘14(精仪系馆3308室；第6周)</font>";
+			getElementById('a1_2').innerHTML += strHTML+"<br>";
+		
+			strHTML = "<a class='blue_red_none' href='kc.kcEjkcb.do?m=show&p_id=2014008300' target='_blank'><b>传热学</b></a><font color='blue'>对流实验36(土木馆一楼西侧；第12周；时间13:30-15:00)</font>";
+			getElementById('a3_6').innerHTML += strHTML+"<br>";
+		
+			strHTML = "<a class='blue_red_none' href='kc.kcEjkcb.do?m=show&p_id=2014008300' target='_blank'><b>传热学</b></a><font color='blue'>稳态实验21(土木馆一楼西侧；第6周；时间14:30-16:00)</font>";
+			getElementById('a3_3').innerHTML += strHTML+"<br>";
+		
+			strHTML = "<a class='blue_red_none' href='kc.kcEjkcb.do?m=show&p_id=2014008300' target='_blank'><b>传热学</b></a><font color='blue'>稳态实验21(土木馆一楼西侧；第6周；时间14:30-16:00)</font>";
+			getElementById('a4_3').innerHTML += strHTML+"<br>";
+		
+			strHTML = "<a class='blue_red_none' href='kc.kcEjkcb.do?m=show&p_id=2022023300' target='_blank'><b>计算机硬件技术基础</b></a><font color='blue'>24(西主楼3-217；第2-16周；时间15:20-16:55)</font>";
+			getElementById('a4_2').innerHTML += strHTML+"<br>";
+		
+		
+	}
+Event.observe(window, "load", setInitValue, false);
+
+</script>
+<!-- 定义列样式，主要是设置列宽度和对齐 -->
+<style>
+  .active-column-0 {width : 0px; text-align:center;}
+  .active-column-1 {width : 150px;text-align:center;}
+  .active-column-2 { width : 150px;text-align:center;}
+  .active-column-3 {width : 150px;text-align:center;}
+  .active-column-4 {width : 150px;text-align:center;}
+  .active-column-5 {width : 150px; text-align:center;}
+  .active-column-6 {width : 150px;text-align:center;}
+  .active-column-7 {width : 150px;text-align:center;}
+  .active-column-8 { width : 150px;text-align:center;}
+  .active-column-9 { width : 150px;text-align:center;}
+  .active-column-10 { text-align:center;}
+  .active-column-11 { text-align:center;}
+  .active-column-12 { text-align:center;}
+  .active-column-13 { text-align:center;}
+  .active-column-14 { text-align:center;}
+</style>
+<form name="frm" action="syxk.vsyxkKcapb.do" style="margin:0px;" target="_self" method="POST">
+<input name="m" value="" type="hidden">
+<input name="p_xnxq" value="2012-2013-1" type="hidden">
+<input name="tokenPriFlag" value="" type="hidden">
+<input name="selectKc" value="" type="hidden">
+<table width="100%" bgcolor="#F2F2F2" border="0" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+        	<td align="rigth">
+        <table align="right" border="0" cellpadding="0" cellspacing="0">
+        	<tbody><tr>
+        		<td width="20">     			
+        		</td>
+        		<td width="50"></td>
+        	</tr>
+        </tbody></table> 
+        	</td>
+        </tr>
+       </tbody></table>
+<table class="table_title_zi25" width="100%" border="0" cellpadding="0" cellspacing="0">
+	
+	<tbody><tr>
+		<td class="copyright_zi_hui_shadow">
+			★已经安排时间的课程：
+			
+		</td>
+
+		<td align="right">
+             <input name="export2" onclick="doExport('exportXLSZtkb');" class="button" value="导出为XLS" type="button">&nbsp;&nbsp;
+         </td>
+
+	</tr>
+</tbody></table>
+
+<table class="table_title_zi25" width="100%" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="1">
+  <tbody><tr>
+  <td><table width="100%" bgcolor="#E9CBF3" border="0" cellpadding="0" cellspacing="1">
+  <tbody><tr>
+    <td class="copyright_zi_hui_b_shadow" height="25" width="9%"></td>
+    <td class="copyright_zi_hui_b_shadow" width="13%"><div align="center">星期一</div></td>
+    <td class="copyright_zi_hui_b_shadow" width="13%"><div align="center">星期二</div></td>
+    <td class="copyright_zi_hui_b_shadow" width="13%"><div align="center">星期三</div></td>
+    <td class="copyright_zi_hui_b_shadow" width="13%"><div align="center">星期四</div></td>
+    <td class="copyright_zi_hui_b_shadow" width="13%"><div align="center">星期五</div></td>
+    <td class="copyright_zi_hui_b_shadow" width="13%"><div align="center">星期六</div></td>
+    <td class="copyright_zi_hui_b_shadow" width="13%"><div align="center">星期日</div></td>
+  </tr>
+  
+  <tr>  
+		<td class="copyright_zi_hui_shadow" bgcolor="#F2F2F2"><div align="center">第1节</div></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a1_1" bgcolor="#F2F2F2"><a class="mainHref" href="http://zhjw.cic.tsinghua.edu.cn/js.vjsKcbBs.do?m=showToXs&amp;p_id=1995990313;10430494" target="_blank"><b>大学物理B(2)</b></a>(戴松涛；任选；全周；三教2101)<br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a1_2" bgcolor="#F2F2F2"><a class="blue_red_none" href="http://zhjw.cic.tsinghua.edu.cn/kc.kcEjkcb.do?m=show&amp;p_id=2013046300" target="_blank"><b>机械设计基础A(2)</b></a><font color="blue">简图测绘14(精仪系馆3308室；第6周)</font><br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a1_3" bgcolor="#F2F2F2"><a class="mainHref" href="http://zhjw.cic.tsinghua.edu.cn/js.vjsKcbBs.do?m=showToXs&amp;p_id=1999990144;20310274" target="_blank"><b>流体力学</b></a>(张锡文；必修；全周；六教6A309)<br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a1_4" bgcolor="#F2F2F2"><a class="mainHref" href="http://zhjw.cic.tsinghua.edu.cn/js.vjsKcbBs.do?m=showToXs&amp;p_id=2005990067;20220233" target="_blank"><b>计算机硬件技术基础</b></a>(邹晓兵；限选；全周；四教4105)<br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a1_5" bgcolor="#F2F2F2"><a class="mainHref" href="http://zhjw.cic.tsinghua.edu.cn/js.vjsKcbBs.do?m=showToXs&amp;p_id=2010990072;20120103" target="_blank"><b>工程材料</b></a>(邵洋；必修；全周；三教1208)<br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a1_6" bgcolor="#F2F2F2"></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a1_7" bgcolor="#F2F2F2"></td>
+	</tr>
+	
+  <tr>  
+		<td class="copyright_zi_hui_shadow" bgcolor="#F2F2F2"><div align="center">第2节</div></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a2_1" bgcolor="#F2F2F2"><a class="mainHref" href="http://zhjw.cic.tsinghua.edu.cn/js.vjsKcbBs.do?m=showToXs&amp;p_id=1999990144;20310274" target="_blank"><b>流体力学</b></a>(张锡文；必修；全周；六教6A309)<br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a2_2" bgcolor="#F2F2F2"></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a2_3" bgcolor="#F2F2F2"><a class="mainHref" href="http://zhjw.cic.tsinghua.edu.cn/js.vjsKcbBs.do?m=showToXs&amp;p_id=1993990072;20140083" target="_blank"><b>传热学</b></a>(姜培学；必修；全周；五教5104)<br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a2_4" bgcolor="#F2F2F2"><a class="mainHref" href="http://zhjw.cic.tsinghua.edu.cn/js.vjsKcbBs.do?m=showToXs&amp;p_id=1995990313;10430494" target="_blank"><b>大学物理B(2)</b></a>(戴松涛；任选；全周；三教2101)<br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a2_5" bgcolor="#F2F2F2"><a class="mainHref" href="http://zhjw.cic.tsinghua.edu.cn/js.vjsKcbBs.do?m=showToXs&amp;p_id=1997990226;10420803" target="_blank"><b>概率论与数理统计</b></a>(王晓峰；限选；全周；二教402)<br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a2_6" bgcolor="#F2F2F2"></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a2_7" bgcolor="#F2F2F2"></td>
+	</tr>
+	
+  <tr>  
+		<td class="copyright_zi_hui_shadow" bgcolor="#F2F2F2"><div align="center">第3节</div></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a3_1" bgcolor="#F2F2F2"><a class="blue_red_none" href="http://zhjw.cic.tsinghua.edu.cn/kc.kcEjkcb.do?m=show&amp;p_id=2012010300" target="_blank"><b>工程材料</b></a><font color="blue">A1(西主楼2区406；第6,8,14周)</font><br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a3_2" bgcolor="#F2F2F2"><a class="mainHref" href="http://zhjw.cic.tsinghua.edu.cn/js.vjsKcbBs.do?m=showToXs&amp;p_id=1998990159;10721041" target="_blank"><b>三年级男生网球</b></a>(刘波；全周；紫荆网球场)<br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a3_3" bgcolor="#F2F2F2"><a class="blue_red_none" href="http://zhjw.cic.tsinghua.edu.cn/kc.kcEjkcb.do?m=show&amp;p_id=2013046300" target="_blank"><b>机械设计基础A(2)</b></a><font color="blue">齿轮范成实验Ⅰ-10(精仪系馆3308；第8周；时间14:20-15:05)</font><br><a class="blue_red_none" href="http://zhjw.cic.tsinghua.edu.cn/kc.kcEjkcb.do?m=show&amp;p_id=2013046300" target="_blank"><b>机械设计基础A(2)</b></a><font color="blue">齿轮范成实验Ⅱ-11(精仪系馆3308室；第10周)</font><br><a class="blue_red_none" href="http://zhjw.cic.tsinghua.edu.cn/kc.kcEjkcb.do?m=show&amp;p_id=2014008300" target="_blank"><b>传热学</b></a><font color="blue">稳态实验21(土木馆一楼西侧；第6周；时间14:30-16:00)</font><br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a3_4" bgcolor="#F2F2F2"><a class="blue_red_none" href="http://zhjw.cic.tsinghua.edu.cn/kc.kcEjkcb.do?m=show&amp;p_id=2013046300" target="_blank"><b>机械设计基础A(2)</b></a><font color="blue">典型机构实例展示20(精仪系馆3308；第3周；时间14:20-15:05)</font><br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a3_5" bgcolor="#F2F2F2"><a class="mainHref" href="http://zhjw.cic.tsinghua.edu.cn/js.vjsKcbBs.do?m=showToXs&amp;p_id=1986990055;20130463" target="_blank"><b>机械设计基础A(2)</b></a>(刘向锋；必修；全周；六教6A201)<br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a3_6" bgcolor="#F2F2F2"><a class="blue_red_none" href="http://zhjw.cic.tsinghua.edu.cn/kc.kcEjkcb.do?m=show&amp;p_id=2014008300" target="_blank"><b>传热学</b></a><font color="blue">对流实验36(土木馆一楼西侧；第12周；时间13:30-15:00)</font><br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a3_7" bgcolor="#F2F2F2"></td>
+	</tr>
+	
+  <tr>  
+		<td class="copyright_zi_hui_shadow" bgcolor="#F2F2F2"><div align="center">第4节</div></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a4_1" bgcolor="#F2F2F2"><a class="mainHref" href="http://zhjw.cic.tsinghua.edu.cn/js.vjsKcbBs.do?m=showToXs&amp;p_id=2005990067;20220233" target="_blank"><b>计算机硬件技术基础</b></a>(邹晓兵；限选；单周；四教4105)<br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a4_2" bgcolor="#F2F2F2"><a class="blue_red_none" href="http://zhjw.cic.tsinghua.edu.cn/kc.kcEjkcb.do?m=show&amp;p_id=2022023300" target="_blank"><b>计算机硬件技术基础</b></a><font color="blue">24(西主楼3-217；第2-16周；时间15:20-16:55)</font><br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a4_3" bgcolor="#F2F2F2"><a class="mainHref" href="http://zhjw.cic.tsinghua.edu.cn/js.vjsKcbBs.do?m=showToXs&amp;p_id=2010990072;20120103" target="_blank"><b>工程材料</b></a>(邵洋；必修；1,3,5,7,13周；三教1208)<br><a class="blue_red_none" href="http://zhjw.cic.tsinghua.edu.cn/kc.kcEjkcb.do?m=show&amp;p_id=2013046300" target="_blank"><b>机械设计基础A(2)</b></a><font color="blue">齿轮范成实验Ⅱ-11(精仪系馆3308室；第10周)</font><br><a class="blue_red_none" href="http://zhjw.cic.tsinghua.edu.cn/kc.kcEjkcb.do?m=show&amp;p_id=2014008300" target="_blank"><b>传热学</b></a><font color="blue">稳态实验21(土木馆一楼西侧；第6周；时间14:30-16:00)</font><br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a4_4" bgcolor="#F2F2F2"></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a4_5" bgcolor="#F2F2F2"><a class="mainHref" href="http://zhjw.cic.tsinghua.edu.cn/js.vjsKcbBs.do?m=showToXs&amp;p_id=1986990055;20130463" target="_blank"><b>机械设计基础A(2)</b></a>(刘向锋；必修；全周；六教6A201)<br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a4_6" bgcolor="#F2F2F2"></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a4_7" bgcolor="#F2F2F2"></td>
+	</tr>
+	
+  <tr>  
+		<td class="copyright_zi_hui_shadow" bgcolor="#F2F2F2"><div align="center">第5节</div></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a5_1" bgcolor="#F2F2F2"></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a5_2" bgcolor="#F2F2F2"></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a5_3" bgcolor="#F2F2F2"></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a5_4" bgcolor="#F2F2F2"></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a5_5" bgcolor="#F2F2F2"></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a5_6" bgcolor="#F2F2F2"></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a5_7" bgcolor="#F2F2F2"></td>
+	</tr>
+	
+  <tr>  
+		<td class="copyright_zi_hui_shadow" bgcolor="#F2F2F2"><div align="center">第6节</div></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a6_1" bgcolor="#F2F2F2"></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a6_2" bgcolor="#F2F2F2"><a class="blue_red_none" href="http://zhjw.cic.tsinghua.edu.cn/kc.kcEjkcb.do?m=show&amp;p_id=1042080300" target="_blank"><b>概率论与数理统计习题课</b></a><font color="blue">概率统计王晓峰26(第5,7,9,12,15周)</font><br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a6_3" bgcolor="#F2F2F2"></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a6_4" bgcolor="#F2F2F2"><a class="mainHref" href="http://zhjw.cic.tsinghua.edu.cn/js.vjsKcbBs.do?m=showToXs&amp;p_id=L06117;00610832" target="_blank"><b>围棋与中国文化</b></a>(方天丰；任选；全周；六教6C101)<br></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a6_5" bgcolor="#F2F2F2"></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a6_6" bgcolor="#F2F2F2"></td>
+		<td class="copyright_zi_hui_shadow" style="text-indent:0px;VERTICAL-ALIGN:top;" id="a6_7" bgcolor="#F2F2F2"></td>
+	</tr>
+	
+</tbody></table>
+</td></tr>
+</tbody></table>
+<br>  
+<table class="table_title_zi25" width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td class="copyright_zi_hui_shadow">
+			★没有安排时间的课程（具体安排由开课系通知学生）：
+			 
+		</td>
+	</tr>
+</tbody></table>
+
+
+
+
+<style>
+body {
+	background-color: #f2f2f2;
+}
+	
+ 
+  .active-column-0 {width : 60px; text-align:center;}
+  .active-column-1 {width : 50px; text-align:center;}
+  .active-column-2 {width : 150px; text-align:left;}
+  .active-column-3 {width : 60px; text-align:center;}
+  .active-column-4 {width : 60px; text-align:center;}
+  
+  .active-column-5 {width : 60px; text-align:center;}
+  .active-column-6 {width : 60px; text-align:center;}
+  .active-column-7 {width : 60px; text-align:center;}
+  .active-column-8 {width : 60px; text-align:center;}
+  .active-column-9 {width : 200px; text-align:left;}
+  
+  
+ 
+  .active-controls-grid {font: menu;}
+	.active-grid-row {border-bottom: 1px solid threedlightshadow;}
+	.active-templates-header .active-box-image {display: none}
+	.active-box-item {
+		padding-top: 0.3em !important;
+		line-height: 0.6em !important;
+	}
+	div div div span {vertical-align: middle !important;}
+</style>
+<script>
+  <!-- 设置表头数据 -->
+  var gridColumns = [
+    "课程号"
+    ,"课序号"
+    ,"课程名"
+    
+    ,"选课状态"
+    
+    ,"上课周次"
+    
+    ,"上课地点"
+    
+    ,"任课教师"
+    ,"选课属性"
+    ,"是否<br>二级选课"
+    ,"选课文字说明"
+    ];
+
+
+  <!--记录行数的变量-->
+  
+
+  <!--定义数据行,第一列为选择框-->
+  var gridData = [
+      
+        [
+          "10641210"
+          ,"0"
+          ,"清华大学英语水平I考试—笔试"
+          
+		    		,
+    			 	
+    					""
+    			 	
+    			
+    			,""
+    			
+    			,""
+    			
+    			,""
+    			,"任选"
+    			,"否"
+          ,"限:2010年及以前入学的学生选课"
+        ],
+        
+      
+        [
+          "10641220"
+          ,"0"
+          ,"清华大学英语水平I考试—口试 "
+          
+		    		,
+    			 	
+    					""
+    			 	
+    			
+    			,""
+    			
+    			,""
+    			
+    			,""
+    			,"任选"
+    			,"否"
+          ,"限:2010年及以前入学的学生选课"
+        ]
+        
+      
+    ];
+</script>
+
+
+<style>
+.active-controls-grid {font: menu;}
+.active-templates-header {
+	text-align:center;
+	FONT-SIZE: 9pt;
+	font-family: "宋体", "新宋体", "黑体";
+	color: #442350;
+	line-height: 18px;
+	font-weight: bold;}
+.active-grid-column {border-right: 1px solid #E9CBF3;
+	font-family: "宋体", "新宋体", "黑体";
+	font-size: 9pt;
+	font-weight: normal;
+	color: #442350;
+	line-height: 18px;}
+.active-grid-row {border-bottom: 1px solid #E9CBF3;}
+</style>
+
+<!-- 显示表格 -->
+<script>
+
+	//create ActiveWidgets Grid javascript object
+	var grid = new Active.Controls.Grid;
+
+	//	set number of rows/columns
+	grid.setRowProperty("count",2);
+	grid.setColumnProperty("count", gridColumns.length);
+
+	//	provide cells and headers text
+	grid.setDataProperty("text", function(i,j){return gridData[i][j]});
+	grid.setColumnProperty("text", function(i){return gridColumns[i]});
+
+	//	set headers width/height
+	grid.setRowHeaderWidth("0px");
+	
+	grid.setColumnHeaderHeight("35px");	 
+		
+
+	// no allow multiple selection
+	grid.setSelectionProperty("multiple", false);
+	
+	//行的背景色交替显示
+	var alternate = function(){return this.getProperty("row/order") % 2 ? "#eeeeee" : "#fcfaf6";}
+	grid.getRowTemplate().setStyle("background", alternate);
+	//鼠标移入移出改变行的背景色
+	grid.getRowTemplate().setEvent("onmouseover", "mouseover(this, 'active-row-highlight')");
+	grid.getRowTemplate().setEvent("onmouseout", "mouseout(this, 'active-row-highlight')");	
+	//状态栏提示
+	var statusTip = function(src){
+	  var txt = src.getItemProperty("text");
+	  var t="";
+	  var re = /[^>]*<\/a>/gi;
+	  var re2 = /<\/a>/gi;
+	  var re3 = /<[^>]+>/i;	  
+	  if(txt!=null) 
+	  {
+	    if(re3.test(txt)) 
+	    {
+	      if(re.test(txt)) t=txt.match(re).join().replace(re2,"");
+	      else t="";
+	    }
+	    else t=txt;
+	  }
+	  var colTitle = src.getColumnProperty("text") + ": ";
+	  var str = re3.test(colTitle)?"":colTitle + t;
+	  window.status = str;
+	};
+	grid.setAction("click",statusTip);
+	//列头长度大于6列头显示提示信息
+	var colTip = function(i){
+	  var re = /^<.*$/;
+	  var re2 = /(?:<br){1}\s*(?:\/)?>/gi;
+	  var t = gridColumns[i];
+	  if (t!=null && !re.test(t) && typeof t=="string" && t.length>6)
+	  {
+	    if (!re2.test(t)) return t; 
+	    else return t.replace(re2,"");
+	  }
+	  else return "";
+	};
+	grid.setColumnProperty("tooltip", colTip);
+		
+	//设置排序标记
+	if(document.frm["p_sort.p1"]){
+	  if(document.frm["p_sort.p1"].value){
+	    grid.setSortProperty("index", getColumnIndex(document.frm["p_sort.p1"].value));
+	    grid.setSortProperty("direction", (document.frm["p_sort.asc1"].value=="true" ? "ascending" : "descending"));
+	  }
+	}
+		
+	// 定义排序动作
+	grid.getTemplate("top/item").setEvent("onmousedown", function(){
+	  var i = this.getItemProperty("index");
+		//默认不处理第一列表头
+		if(i==0) return;
+		if(typeof (doSort) == "function") {doSort(i ,"queryAll");}
+	  });
+  
+  function getColumnIndex(param){//根据参数确定排序依据的列索引
+    if(sortParams){
+      for(var i=0;i<sortParams.length;i++){
+        if(param == sortParams[i]) return i;
+      }
+    }
+    return -1;
+  }
+</script>
+
+<table style="border-top:none" align="center" height="280" width="100%" bgcolor="#F2f2f2" border="0" cellpadding="0" cellspacing="1">
+
+  <tbody><tr height="100%" valign="top">
+		<td bgcolor="#F2F2F2">
+			<script>
+				//write grid html to the page
+				document.write(grid);
+			</script><div id="tag50" class="active-controls-grid gecko" onkeydown="dispatch(event,this)" onmousewheel="dispatch(event,this)"><div id="tag50.layout/data" class="active-scroll-data gecko" style="padding-left: 0px; padding-top: 35px; width: 1364px; height: 278px;"><div id="tag50.data.item:0" class="active-templates-row active-grid-row active-list-item gecko" style="background:#fcfaf6;" onclick="dispatch(event,this)" onmouseover="mouseover(this, 'active-row-highlight')" onmouseout="mouseout(this, 'active-row-highlight')"><div id="tag50.data.item:0.item:0" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-0 gecko" onclick="dispatch(event,this)">10641210</div><div id="tag50.data.item:0.item:1" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-1 gecko" onclick="dispatch(event,this)">0</div><div id="tag50.data.item:0.item:2" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-2 gecko" onclick="dispatch(event,this)">清华大学英语水平I考试—笔试</div><div id="tag50.data.item:0.item:3" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-3 gecko" onclick="dispatch(event,this)"></div><div id="tag50.data.item:0.item:4" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-4 gecko" onclick="dispatch(event,this)"></div><div id="tag50.data.item:0.item:5" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-5 gecko" onclick="dispatch(event,this)"></div><div id="tag50.data.item:0.item:6" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-6 gecko" onclick="dispatch(event,this)"></div><div id="tag50.data.item:0.item:7" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-7 gecko" onclick="dispatch(event,this)">任选</div><div id="tag50.data.item:0.item:8" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-8 gecko" onclick="dispatch(event,this)">否</div><div id="tag50.data.item:0.item:9" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-9 gecko" onclick="dispatch(event,this)">限:2010年及以前入学的学生选课</div></div><div id="tag50.data.item:1" class="active-templates-row active-grid-row active-list-item gecko" style="background:#eeeeee;" onclick="dispatch(event,this)" onmouseover="mouseover(this, 'active-row-highlight')" onmouseout="mouseout(this, 'active-row-highlight')"><div id="tag50.data.item:1.item:0" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-0 gecko" onclick="dispatch(event,this)">10641220</div><div id="tag50.data.item:1.item:1" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-1 gecko" onclick="dispatch(event,this)">0</div><div id="tag50.data.item:1.item:2" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-2 gecko" onclick="dispatch(event,this)">清华大学英语水平I考试—口试 </div><div id="tag50.data.item:1.item:3" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-3 gecko" onclick="dispatch(event,this)"></div><div id="tag50.data.item:1.item:4" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-4 gecko" onclick="dispatch(event,this)"></div><div id="tag50.data.item:1.item:5" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-5 gecko" onclick="dispatch(event,this)"></div><div id="tag50.data.item:1.item:6" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-6 gecko" onclick="dispatch(event,this)"></div><div id="tag50.data.item:1.item:7" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-7 gecko" onclick="dispatch(event,this)">任选</div><div id="tag50.data.item:1.item:8" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-8 gecko" onclick="dispatch(event,this)">否</div><div id="tag50.data.item:1.item:9" class="active-templates-text active-row-cell active-grid-column active-list-item active-column-9 gecko" onclick="dispatch(event,this)">限:2010年及以前入学的学生选课</div></div></div><div id="tag50.layout/top" class="active-scroll-top gecko" style="padding-left: 0px; height: 35px; width: 1364px;"><div id="tag50.top.item:0" class="active-templates-header active-box-normal active-column-0 active-sort-none active-list-item gecko" title="" onmousedown="dispatch(event,this)" onmouseenter="mouseover(this,'active-header-over')" onmouseleave="mouseout(this,'active-header-over')" oncontextmenu="return false" onselectstart="return false"><div id="tag50.top.item:0/box" class="active-box-item gecko"><span id="tag50.top.item:0/box/image" class="active-box-image active-image-none gecko"></span>课程号<span id="tag50.top.item:0/box/sort" class="active-box-sort gecko"></span></div><div id="tag50.top.item:0/div" class="active-box-resize gecko" onmousedown="dispatch(event,this)">&nbsp;</div></div><div id="tag50.top.item:1" class="active-templates-header active-box-normal active-column-1 active-sort-none active-list-item gecko" title="" onmousedown="dispatch(event,this)" onmouseenter="mouseover(this,'active-header-over')" onmouseleave="mouseout(this,'active-header-over')" oncontextmenu="return false" onselectstart="return false"><div id="tag50.top.item:1/box" class="active-box-item gecko"><span id="tag50.top.item:1/box/image" class="active-box-image active-image-none gecko"></span>课序号<span id="tag50.top.item:1/box/sort" class="active-box-sort gecko"></span></div><div id="tag50.top.item:1/div" class="active-box-resize gecko" onmousedown="dispatch(event,this)">&nbsp;</div></div><div id="tag50.top.item:2" class="active-templates-header active-box-normal active-column-2 active-sort-none active-list-item gecko" title="" onmousedown="dispatch(event,this)" onmouseenter="mouseover(this,'active-header-over')" onmouseleave="mouseout(this,'active-header-over')" oncontextmenu="return false" onselectstart="return false"><div id="tag50.top.item:2/box" class="active-box-item gecko"><span id="tag50.top.item:2/box/image" class="active-box-image active-image-none gecko"></span>课程名<span id="tag50.top.item:2/box/sort" class="active-box-sort gecko"></span></div><div id="tag50.top.item:2/div" class="active-box-resize gecko" onmousedown="dispatch(event,this)">&nbsp;</div></div><div id="tag50.top.item:3" class="active-templates-header active-box-normal active-column-3 active-sort-none active-list-item gecko" title="" onmousedown="dispatch(event,this)" onmouseenter="mouseover(this,'active-header-over')" onmouseleave="mouseout(this,'active-header-over')" oncontextmenu="return false" onselectstart="return false"><div id="tag50.top.item:3/box" class="active-box-item gecko"><span id="tag50.top.item:3/box/image" class="active-box-image active-image-none gecko"></span>选课状态<span id="tag50.top.item:3/box/sort" class="active-box-sort gecko"></span></div><div id="tag50.top.item:3/div" class="active-box-resize gecko" onmousedown="dispatch(event,this)">&nbsp;</div></div><div id="tag50.top.item:4" class="active-templates-header active-box-normal active-column-4 active-sort-none active-list-item gecko" title="" onmousedown="dispatch(event,this)" onmouseenter="mouseover(this,'active-header-over')" onmouseleave="mouseout(this,'active-header-over')" oncontextmenu="return false" onselectstart="return false"><div id="tag50.top.item:4/box" class="active-box-item gecko"><span id="tag50.top.item:4/box/image" class="active-box-image active-image-none gecko"></span>上课周次<span id="tag50.top.item:4/box/sort" class="active-box-sort gecko"></span></div><div id="tag50.top.item:4/div" class="active-box-resize gecko" onmousedown="dispatch(event,this)">&nbsp;</div></div><div id="tag50.top.item:5" class="active-templates-header active-box-normal active-column-5 active-sort-none active-list-item gecko" title="" onmousedown="dispatch(event,this)" onmouseenter="mouseover(this,'active-header-over')" onmouseleave="mouseout(this,'active-header-over')" oncontextmenu="return false" onselectstart="return false"><div id="tag50.top.item:5/box" class="active-box-item gecko"><span id="tag50.top.item:5/box/image" class="active-box-image active-image-none gecko"></span>上课地点<span id="tag50.top.item:5/box/sort" class="active-box-sort gecko"></span></div><div id="tag50.top.item:5/div" class="active-box-resize gecko" onmousedown="dispatch(event,this)">&nbsp;</div></div><div id="tag50.top.item:6" class="active-templates-header active-box-normal active-column-6 active-sort-none active-list-item gecko" title="" onmousedown="dispatch(event,this)" onmouseenter="mouseover(this,'active-header-over')" onmouseleave="mouseout(this,'active-header-over')" oncontextmenu="return false" onselectstart="return false"><div id="tag50.top.item:6/box" class="active-box-item gecko"><span id="tag50.top.item:6/box/image" class="active-box-image active-image-none gecko"></span>任课教师<span id="tag50.top.item:6/box/sort" class="active-box-sort gecko"></span></div><div id="tag50.top.item:6/div" class="active-box-resize gecko" onmousedown="dispatch(event,this)">&nbsp;</div></div><div id="tag50.top.item:7" class="active-templates-header active-box-normal active-column-7 active-sort-none active-list-item gecko" title="" onmousedown="dispatch(event,this)" onmouseenter="mouseover(this,'active-header-over')" onmouseleave="mouseout(this,'active-header-over')" oncontextmenu="return false" onselectstart="return false"><div id="tag50.top.item:7/box" class="active-box-item gecko"><span id="tag50.top.item:7/box/image" class="active-box-image active-image-none gecko"></span>选课属性<span id="tag50.top.item:7/box/sort" class="active-box-sort gecko"></span></div><div id="tag50.top.item:7/div" class="active-box-resize gecko" onmousedown="dispatch(event,this)">&nbsp;</div></div><div id="tag50.top.item:8" class="active-templates-header active-box-normal active-column-8 active-sort-none active-list-item gecko" title="是否二级选课" onmousedown="dispatch(event,this)" onmouseenter="mouseover(this,'active-header-over')" onmouseleave="mouseout(this,'active-header-over')" oncontextmenu="return false" onselectstart="return false"><div id="tag50.top.item:8/box" class="active-box-item gecko"><span id="tag50.top.item:8/box/image" class="active-box-image active-image-none gecko"></span>是否<br>二级选课<span id="tag50.top.item:8/box/sort" class="active-box-sort gecko"></span></div><div id="tag50.top.item:8/div" class="active-box-resize gecko" onmousedown="dispatch(event,this)">&nbsp;</div></div><div id="tag50.top.item:9" class="active-templates-header active-box-normal active-column-9 active-sort-none active-list-item gecko" title="" onmousedown="dispatch(event,this)" onmouseenter="mouseover(this,'active-header-over')" onmouseleave="mouseout(this,'active-header-over')" oncontextmenu="return false" onselectstart="return false"><div id="tag50.top.item:9/box" class="active-box-item gecko"><span id="tag50.top.item:9/box/image" class="active-box-image active-image-none gecko"></span>选课文字说明<span id="tag50.top.item:9/box/sort" class="active-box-sort gecko"></span></div><div id="tag50.top.item:9/div" class="active-box-resize gecko" onmousedown="dispatch(event,this)">&nbsp;</div></div><div id="tag50.layout/top/fill" class="active-templates-box active-box-normal active-scroll-fill gecko"><div id="tag50.layout/top/fill/box" class="active-box-item gecko"></div></div></div><div id="tag50.layout/left" class="active-scroll-left gecko" style="width: 0px; padding-top: 35px; height: 278px;"><div id="tag50.left.item:0" class="active-templates-item active-box-normal active-list-item gecko"><div id="tag50.left.item:0/box" class="active-box-item gecko"><span id="tag50.left.item:0/box/image" class="active-box-image active-image-none gecko"></span>1</div></div><div id="tag50.left.item:1" class="active-templates-item active-box-normal active-list-item gecko"><div id="tag50.left.item:1/box" class="active-box-item gecko"><span id="tag50.left.item:1/box/image" class="active-box-image active-image-none gecko"></span>2</div></div></div><div id="tag50.layout/corner" class="active-templates-box active-box-normal active-scroll-corner gecko" style="width:0px;height:35px;"><div id="tag50.layout/corner/box" class="active-box-item gecko"></div></div><div style="z-index: 0;" id="tag50.layout/scrollbars" class="active-scroll-bars gecko" onscroll="dispatch(event,this)" onresize="dispatch(event,this)"><div style="height: 0px; width: 0px;" id="tag50.layout/scrollbars/space" class="active-scroll-space gecko"></div></div></div>
+		</td>
+	</tr>
+
+	
+<!-- 没有记录时显示给用户提示信息 -->
+
+
+</tbody></table>
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+<!-- 不分页时显示总记录个数 -->
+
+	<tbody><tr>
+		<td>
+			<table align="center" height="20" width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody><tr class="zhjwDisBottomTR">
+					<td style="filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#ffffff', endColorStr='#CDCDCD', gradientType='1')" align="center">共2条记录&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+
+
+<!-- 分页显示时显示分页信息 -->
+
+</tbody></table>
+
+
+<br>
+                
+</form>
+	</div>
+</div>
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td class="copyright_shadow" align="center" height="30" bgcolor="#eabdf4">
+		&#169;版权所有：清华大学教务处、研究生院、注册中心 | 技术支持：<a href="http://www.cic.tsinghua.edu.cn/" target="_blank">清华大学计算机与信息管理中心</a>
+		</td>
+	</tr>
+</tbody></table>
+
+
+
+
+
+
+</body></html>
